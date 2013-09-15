@@ -9,7 +9,7 @@ import org.joda.time.format.DateTimeFormatter;
 public class Main {
     
     public static void main(String[] args) {
-        TimeRule timeRule = RuleEngine.getDefaultTimeRule();
+        TimeRule timeRule = RuleEngine.getDefault().getTimeRule();
         DateTime currentTime = now();
         DateTimeFormatter fmt = DateTimeFormat.fullDateTime();
         System.out.println("The current time is " + fmt.print(currentTime));

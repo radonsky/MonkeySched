@@ -1,4 +1,4 @@
-package com.radonsky.monkeyshed;
+package com.radonsky.monkeysched;
 
 public class Main {
 

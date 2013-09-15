@@ -6,7 +6,7 @@ group = 'com.radonsky.monkeysched'
 
 version = '0.0.1-SNAPSHOT'
 
-mainClassName = 'com.radonsky.monkeyshed.Main'
+mainClassName = 'com.radonsky.monkeysched.Main'
 
 description = """A program that determines if Monkeys should run"""
 

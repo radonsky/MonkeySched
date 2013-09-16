@@ -2,6 +2,7 @@ package com.radonsky.monkeysched;
 
 import static org.joda.time.DateTime.*;
 import static org.junit.Assert.*;
+import static org.joda.time.DateTimeConstants.*;
 
 import java.util.Collections;
 
@@ -61,6 +62,14 @@ public class RuleEngineTest {
                 Collections.<TimeRule>emptyList()
         );
         assertFalse(re.getTimeRule().apply(now()));
+    }
+    
+    @Test
+    public void completeTest() {
+        TimeRule rule = RuleEngine.getDefault().getTimeRule();
+        assertFalse(rule.apply(new DateTime(2013, SEPTEMBER, 1, 10, 00)));
+        assertFalse(rule.apply(new DateTime(2013, DECEMBER, 25, 14, 15)));
+        assertTrue(rule.apply(new DateTime(2013, SEPTEMBER, 16, 14, 00)));
     }
     
 }

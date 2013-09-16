@@ -17,7 +17,7 @@ public class Main {
         if (canRun) {
             System.out.println("Monkeys can cause havoc now!");
         } else {
-            System.out.println("Monkeys should sleep now.");
+            System.out.println("Monkeys should be sleeping now.");
         }
     }
 

@@ -26,7 +26,7 @@ public class RuleEngine {
                 new DayPeriodTimeRule(THURSDAY, new LocalTime(9, 00), new LocalTime(15, 00)),
                 new DayPeriodTimeRule(FRIDAY, new LocalTime(9, 00), new LocalTime(15, 00))
             ),
-            ImmutableList.<TimeRule>of(
+            ImmutableList.of(
                 new PartialTimeRule(JANUARY, 1),            // New Year's Day
                 new PartialTimeRule(2013, NOVEMBER, 28),    // Thanksgiving Day
                 new PartialTimeRule(DECEMBER, 25),          // Christmas Day
